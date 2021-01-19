@@ -1,7 +1,55 @@
 *{
     margin: 0;
     padding: 0; 
+    list-style: none;
 }
 body{
     background-color: white;
+}
+a {
+    text-decoration: none;
+}
+.container-1 {
+    background: url(../images/mobile/image-hero.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    padding: 40px;
+    margin-bottom: 10vh;
+}
+.container-1 img {
+    font-size: bold;
+}
+.container-1 .first-inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-1 .loopstudios{
+    font: 2em Arial;
+}
+.container-1 .keyword{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    border: hsl(0, 0%, 100%) solid 3px;
+    font-weight: 300;
+    width: 70vw;
+    text-transform: uppercase;
+    padding: 30px;
+    position: absolute;
+    top: 40%;
+}
+
+.container-2 {
+    margin: 5%;
+    height: 100vh;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
