@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="old_css/style.css"> -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -15,76 +16,87 @@
     <div class="first-inline">
       <h3 class="loopstudios">loopstudios</h3>
       <!-- <a href="#"><i class="fas fa-bars fa-2x"></i></a> -->
-      <a href="">
-        <img src="images/icon-hamburger.svg" alt="the svg">
-      </a> 
+      <nav id="thenav" >
+        <a href="">About</a> 
+        <a href="">Careers</a>
+        <a href="">Events</a>
+        <a href="">Products</a>
+        <a href="">Support</a>
+      </nav>      
     </div>
 
-    <nav id="thenav" hidden>
-      <a href="">About</a> 
-      <a href="">Careers</a>
-      <a href="">Events</a>
-      <a href="">Products</a>
-      <a href="">Support</a>
-    </nav>
-
-    <h3 class="keyword"> Immersive 
-      experiences 
-      that 
-      deliver</h3>
+    <h3 class="keyword"> Immersive experiences that deliver</h3>
   </div>
 
   <div class="container-2">
-    <section class="firstOne">
-      <a href="">
-        <img src="images/mobile/image-interactive.jpg" alt="">
-      </a>
-      <h3 class="keyword-2">
+    <img src="images/desktop/image-interactive.jpg" alt="">
+    <!-- <div class="about-card">
+      <h3>
         The leader in interactive VR
       </h3>
     
-     <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
       projects for some of the best companies around the globe. Our award-winning 
       creations have transformed businesses through digital experiences that bind 
       to their brand.</p>
-    </section>
-  
-
-    <section class="secondOne">
-      <p>Our creations</p>
-  
-      <p>See all</p>
-  
-      <ul>
-        <li>Deep earth</li>
-        <li>Night arcade</li>
-        <li>Soccer team VR</li>
-        <li>The grid</li>
-        <li>From up above VR</li>
-        <li>Pocket borealis</li>
-        <li>The curiosity</li>
-        <li>Make it fisheye</li>
-      </ul>
-    </section>
+    </div> -->
   </div>
+  
+  <hr>
+
+  <!-- FOCUS -->
+  <section class="secondOne">
+    <div class="top-part">
+      <h3>Our creations</h3>
+      <p>See all</p>
+    </div>
+
+    <ul>
+      <li class="stuff"> <a>Deep earth</a> </li>
+      <li> <a> Night arcade </a></li>
+      <li> <a>Soccer team VR </a></li>
+      <li> <a>The grid </a></li>
+      <li> <a>From up above VR </a></li>
+      <li> <a>Pocket borealis </a></li>
+      <li> <a>The curiosity </a></li>
+      <li> <a>Make it fisheye </a></li>
+    </ul>
+    
+  </section>
 
   <footer>
-    <h3 class="loopstudios">loopstudios</h3>
-    <div class="info">
-      <p>About</p>
-      <p>Careers</p>
-      <p>Events</p>
-      <p>Products</p>
-      <p>Support</p>
+    <div class="first-flex">
+      <h3 class="loopstudios">loopstudios</h3>
+      
+      <div class="social-media">
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+        <img src="images/icon-pinterest.svg" alt="">
+        <img src="images/icon-instagram.svg" alt="">
+      </div>
     </div>
-  
-    © 2021 Loopstudios. All rights reserved.
+    
+    <div class="second-flex">
+      <div class="info">
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </div>
+    
+      <p>
+        © 2021 Loopstudios. All rights reserved.
+      </p>
+    </div>
   </footer>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Dapo Ola-Olatunji</a>.
-  </div>
+  </div> -->
 
     <script src="js/main.js"></script>
 </body>

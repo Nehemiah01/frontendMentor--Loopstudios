@@ -1,55 +1,342 @@
-*{
-    margin: 0;
-    padding: 0; 
-    list-style: none;
+/* @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap'); */
+
+@font-face {
+    font-family: Alata;
+    src: url(../Alata\,Josefin_Sans/Alata/Alata-Regular.ttf);
 }
-body{
-    background-color: white;
+@font-face {
+    font-family: Josefin_Sans;
+    src: url(../Alata,Josefin_Sans/Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* @media (max-width:1440px){ */
+body {
+    margin: 0; height: 0; overflow-x: auto; width: auto;
 }
 a {
     text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.loopstudios {
+    font-size: 2.5rem;
+    font-family: Alata;
 }
 .container-1 {
-    background: url(../images/mobile/image-hero.jpg);
+    font-family: Josefin Sans;
+    background: url(../images/desktop/image-hero.jpg) center  no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */ /*to preserve aspect ratio and cut sides off */
+    width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;
     color: hsl(0, 0%, 100%);
-    padding: 40px;
-    margin-bottom: 10vh;
 }
-.container-1 img {
-    font-size: bold;
+.first-inline {
+    padding: 5% 7%;
 }
-.container-1 .first-inline {
+/* .container-1 {
+    margin-top: ;
+} */
+.first-inline {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    font-size: 1rem;  
+    font-family: Alata;
+}
+nav a {
+    padding: 1.25rem;
+    padding-bottom: 0%;
+}
+/* .container-1 nav a:hover {
+    border-bottom: hsl(0, 0%, 100%) 3px solid;
+} */
+.container-1 nav a:hover::after {
+    content:"";
+    display: block;
+    padding-top: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: hsl(0, 0%, 100%) solid 3px;
+}
+.keyword {
+    font-size: 4rem;
+    display: inline-block;
+    font-family: Josefin_Sans, Tahoma, Geneva, Verdana, sans-serif;
+    /* display: grid; */
+    /* grid-auto-columns: minmax(auto, 40%); */
+    max-width: 50%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border:hsl(0, 0%, 100%) solid 4px;
+    margin: 5% 7%;
+    padding: 3rem;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    box-sizing: border-box;
+}
+
+/* END OF CONTAINER 1 */
+
+.container-2 {
+    padding: 10% 12%;
+    /* margin-bottom: 0;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100vh; */
+    vertical-align: middle;
+    /* width: 100%; */
+    position: relative;
+    margin: auto;
+}
+.container-2 img {
+    margin: auto;
+    background-size: cover; 
+    align-self: flex-start;
+    /* vertical-align: auto; */
+}
+.container-2::after {
+    content: "<h3> I don't know you before </h3>";
+    color:hsl(0, 0%, 0%);/*"<h3>
+    The leader in interactive VR
+  </h3>
+
+  <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+  projects for some of the best companies around the globe. Our award-winning 
+  creations have transformed businesses through digital experiences that bind 
+  to their brand.</p>"*/;
+}
+.about-card {
+    max-width: 50%;
+    /* max-height: 60%; */
+    padding: 5rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    left: 39%;
+    bottom: 0%;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    /* padding: 6%; */
+    /* padding-bottom: 0.8rem; */
+}
+.container-2 .about-card h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: Josefin Sans;
+    /* font-size: xx-large; */
+    margin-bottom: 2rem;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+.about-card p {
+    line-height: 1.6rem;
+    width: 90%;
+    font-family: 'Alata';
+    color: rgba(0, 0, 0, 0.5);
+}
+/* END OF CONTANINER 2 FIRST PART */
+.secondOne {
+    width: 100vw;
+    /* margin: 10%; */
+    margin-bottom: 15%;
+    text-transform: uppercase;
+}
+.secondOne .top-part {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.secondOne ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 1.8rem;
+    grid-auto-rows: 65vh;
+    vertical-align: text-bottom;
+}
+.secondOne li {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    vertical-align: text-bottom;
+    /* text-align: end; */
+    /* font: ; */
+}
+.secondOne li a {
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    left: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: Alata;
+    max-width: 55%;
+}
+.secondOne ul>li {
+    vertical-align: bottom;
+}
+.secondOne ul li:first-child {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+.secondOne ul li:nth-child(2) {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+.secondOne ul li:nth-child(3) {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+.secondOne ul li:nth-child(4) {
+    background-image: url(../images/desktop/image-grid.jpg);
+}
+.secondOne ul li:nth-child(5) {
+    background-image: url(../images/desktop/image-from-above.jpg);
+}
+.secondOne ul li:nth-child(6) {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+.secondOne ul li:nth-child(7) {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+}
+.secondOne ul li:last-child {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+}
+.secondOne ul .stuff{
+    flex-basis: 30%;
+    flex-wrap: wrap;
+}
+.top-part h3 {
+    font: Alata 3rem/0.2rem;
+}
+footer {
+    height: 25vh;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    padding: 2% 5%;
+}
+footer .first-flex, footer .second-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.container-1 .loopstudios{
-    font: 2em Arial;
+footer .first-flex {
+    margin-bottom: 2rem;
 }
-.container-1 .keyword{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 3px;
-    font-size: 40px;
-    border: hsl(0, 0%, 100%) solid 3px;
-    font-weight: 300;
-    width: 70vw;
-    text-transform: uppercase;
-    padding: 30px;
-    position: absolute;
-    top: 40%;
+footer .social-media img{
+    margin-left: 1rem;
+}
+footer .info ul li {
+    margin-right: 2rem;
+    display: inline;
+}
+footer p {
+    color: hsl(0, 0%, 41%);
 }
 
-.container-2 {
-    margin: 5%;
-    height: 100vh;
-}
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+@media (max-width:375px) {
+
+    @font-face {
+        font-family: Alata;
+        src: url(../Alata\,Josefin_Sans/Alata/Alata-Regular.ttf);
+    }
+    @font-face {
+        font-family: Josefin_Sans;
+        src: url(../Alata,Josefin_Sans/Josefin_Sans/static/JosefinSans-Light.ttf);
+    }
+    
+    *{
+        margin: 0;
+        padding: 0; 
+        list-style: none;
+    }
+    body{
+        background-color: white;
+    }
+    body {
+        margin: 0; height: 0; overflow-x: hidden; width: auto;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container-1 {
+        background: url(../images/mobile/image-hero.jpg);
+        height: 100vh;
+        /* object-fit: scale-down; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: hsl(0, 0%, 100%);
+        padding: 50px;
+        margin-bottom: 10vh;
+    }
+    .container-1 img {
+        height: 25px;
+    }
+    .container-1 .first-inline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-1 nav {
+        display: none;
+    }
+    .container-1 .loopstudios{
+        font: 2.5em Alata;
+        font-weight: 600;
+    }
+    .container-1 .keyword{
+        font-family: Josefin_Sans, Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 3px;
+        white-space: pre-line;
+        font-size: 3em;
+        border: hsl(0, 0%, 100%) solid 3px;
+        font-weight: 300;
+        max-width: 75vw;
+        text-transform: uppercase;
+        padding: auto;
+        padding-left: 50px;
+        position: absolute;
+        top: 40%;
+        margin: auto;
+    }
+    
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin: 5%;
+        height: 100vh;
+    }
+    .container-2 img {
+        justify-content: center;
+        width: 80%;
+    }
+    .container-2 section h3 {
+        font: 2.5em Alata;
+        width: 60vw;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
 }
