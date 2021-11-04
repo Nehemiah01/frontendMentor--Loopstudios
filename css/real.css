@@ -1,0 +1,24 @@
+footer {
+    height: 25vh;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    padding: 2% 5%;
+}
+footer .first-flex, footer .second-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .first-flex {
+    margin-bottom: 2rem;
+}
+footer .social-media img{
+    margin-left: 1rem;
+}
+footer .info ul li {
+    margin-right: 2rem;
+    display: inline;
+}
+footer p {
+    color: hsl(0, 0%, 41%);
+}
