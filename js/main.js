@@ -6,7 +6,7 @@ console.log(seeAll)
 
 let interactive = document.querySelector('.interactive')
 // console.log(interactive.off)
-let matchPhone = window.matchMedia('(max-width: 500px)')
+let matchPhone = window.matchMedia('(max-width: 767px)')
 
 if (matchPhone.matches) {
     firstHero.setAttribute('src', 'images/mobile/image-hero.jpg')
@@ -14,11 +14,11 @@ if (matchPhone.matches) {
     document.querySelector('.creations').appendChild(seeAll)
 }
 
-if (document.body.clientWidth <= 500) {
-    document.querySelector('nav').style.display = 'none'
-} else if (document.body.clientWidth > 500) {
-    document.querySelector('nav').style.display = 'inherit'
-}
+// if (document.body.clientWidth <= 767) {
+//     document.querySelector('nav').style.display = 'none'
+// } else /*if (document.body.clientWidth > 500)*/ {
+//     document.querySelector('nav').style.display = 'inherit'
+// }
 
 var currentState = 0
 let mobileMenu = document.getElementById('mobile-menu')

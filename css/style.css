@@ -98,15 +98,17 @@ a {
     width: 80%;
     margin: auto;
     height: 100vh;
-    vertical-align:auto;
+    display: flex;
+    align-content:flex-end;
     vertical-align: baseline;
+    align-content: space-around;
 }
 .container-2 .interactive {
     object-fit: scale-down;
     max-width: 70%;
     margin: auto;
     background-size: cover; 
-    align-self: flex-start;
+    /* align-self: baseline; */
     position: absolute;
     /* bottom: auto; */
     /* vertical-align: auto; */
@@ -116,7 +118,8 @@ a {
     overflow: hidden;
     padding: 5% 5% 0;
     position: absolute;
-    bottom: 25%;
+    /* align-self: baseline; */
+    /* bottom: 25%; */
     right: 0;
     background-color: hsl(0, 0%, 100%);
 }
@@ -164,7 +167,7 @@ section .top-part h3 {
     font-family: 'Alata';
     letter-spacing: 0.3rem;
 }
-section .top-part p:hover {
+#seeAll:hover {
     background-color: #000;
     color: #fff;
     cursor: pointer;
@@ -243,7 +246,7 @@ footer p {
 }
 
 
-@media (max-width:500px) {
+@media (max-width:767px) {
     
     @font-face {
         font-family: Alata;
@@ -344,6 +347,7 @@ footer p {
         width: 87%;
     }
     .container-2 .wrapper {
+        display: block;
         width: 100%;
     }
     .container-2 .mobile-interactive {
