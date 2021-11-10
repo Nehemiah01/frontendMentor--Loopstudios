@@ -1,5 +1,4 @@
 # Avoid accidental upload of the Sketch and Figma design files
-/design
 #####################################################
 ## Please do not remove lines 5 and 6 - thanks! 🙂 ##
 #####################################################
@@ -16,5 +15,4 @@
 .DS_Store
 .prettierignore
 
-./old_css
-./otg fa
+design/
