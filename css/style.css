@@ -22,6 +22,7 @@ a {
     height: 100vh;
     color: hsl(0, 0%, 100%);
 }
+
 .hero {
     z-index: -1;
     position: absolute;
@@ -103,7 +104,6 @@ a {
     padding: 5% 5% 0;
     position: absolute;
     align-self: flex-end;
-    /* bottom: 25%; */
     right: 0;
     background-color: hsl(0, 0%, 100%);
 }
@@ -144,18 +144,27 @@ section .top-part h3 {
     font-size: 300%;
     font-weight: 400;
 }
-#seeAll {
+.seeAll {
     padding: 0.7rem 2rem 0.5rem 2rem;
     font-size: 0.9rem;
     font-weight: 500;
     border: solid 2px rgba(0, 0, 0, 0.5);
     font-family: 'Alata';
     letter-spacing: 0.3rem;
+
+    /* text-transform: uppercase;
+    display: inline-flex;
+    margin: 0.5rem auto;
+    padding: 0.7rem 2.3rem;
+    vertical-align: sub !important; */
 }
-#seeAll:hover {
+.seeAll:hover {
     background-color: #000;
     color: #fff;
     cursor: pointer;
+}
+.mobile {
+    display: none;
 }
 .top-part h3 {
     font: Alata 3rem/0.2rem;
@@ -192,12 +201,13 @@ section .creations {
 footer {
     display: flex;
     justify-content: space-between;
-    height: 25ch;
+    min-height: 25ch;
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
-    padding: 5% 10%;
+    padding: 5% 10% 8% 10%;
     font-family: 'Alata';   
     font-size: 0.9rem;
+    position: relative;
 }
 footer .first-flex, footer .second-flex {
     display: flex;
@@ -228,6 +238,20 @@ footer .first-flex {
 footer p {
     color: hsl(0, 0%, 41%);
 }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: rgba(238, 238, 238, 0.979);
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    /* padding: ; */
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 
 @media (max-width:767px) {
@@ -246,6 +270,12 @@ footer p {
     a {
         text-decoration: none;
     }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: unset;
+    }
     .logo {
         height: 1.5rem;
     }
@@ -253,7 +283,7 @@ footer p {
         display: none;
     }
     .first-inline .hamburger, .mobile-interactive, .image-mobile {
-        display: block;
+        display: unset;
     }
     
     .container-1 {
@@ -356,12 +386,9 @@ footer p {
         text-transform: uppercase;
         text-align: center;
     }
-    #seeAll {
-        text-transform: uppercase;
-        display: inline-flex;
+    .seeAll {
         margin: 0.5rem auto;
         padding: 0.7rem 2.3rem;
-        vertical-align: sub !important;
     }
     .container-2 section, .creations img {
         width: 100%;
@@ -412,13 +439,5 @@ footer p {
     }
     .second-flex p {
         margin-top: 1.2rem;
-    }
-    .attribution { 
-        font-size: 11px; 
-        text-align: center; 
-    }
-    
-    .attribution a { 
-        color: hsl(228, 45%, 44%); 
     }
 }
