@@ -426,7 +426,10 @@ footer p {
         color: hsl(0, 0%, 100%);
     }
     .first-flex, .second-flex {
-        align-items: center;        
+        align-items: center;      
+    }
+    .first-flex > *, .second-flex > * {
+        margin-bottom: 0.5rem;  
     }
     .info {
         width: 100%;
@@ -438,6 +441,6 @@ footer p {
         display: block;
     }
     .second-flex p {
-        margin-top: 1.2rem;
+        margin: 1.2rem auto 1rem;
     }
 }
